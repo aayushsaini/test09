@@ -346,7 +346,7 @@ export class Home extends Component {
                                     } else {
                                         document.getElementById("increased_count_district_cnf").innerHTML = data[counter].districtData[counter2].delta.confirmed;
                                         document.getElementById("cnf_arrow_district").innerHTML = "arrow_upward";
-                                        document.getElementById("cnf_arrow_district").style.color = "coral";
+                                        document.getElementById("cnf_arrow_district").style.color = "#ff8f32";
                                     }
 
                                     if (data[counter].districtData[counter2].delta.recovered < 1) {
@@ -411,7 +411,7 @@ export class Home extends Component {
                             } else {
                                 document.getElementById("increased_cnf_state").innerHTML = data.statewise[counter].deltaconfirmed;
                                 document.getElementById("cnf_arrow_state").innerHTML = "arrow_upward";
-                                document.getElementById("cnf_arrow_state").style.color = "coral";
+                                document.getElementById("cnf_arrow_state").style.color = "#ff8f32";
                             }
 
                             if (data.statewise[counter].deltarecovered < 1) {
